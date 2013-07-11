@@ -23,5 +23,5 @@ capybara-*.html
 /spec/tmp/*
 **.orig
 rerun.txt
-pickle-email-*.html
 .project
+/config/initializers/fantasy_football_nerd.rb

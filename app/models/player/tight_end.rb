@@ -1,0 +1,3 @@
+class TightEnd < Player
+
+end
