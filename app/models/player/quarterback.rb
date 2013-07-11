@@ -1,0 +1,3 @@
+class Quarterback < Player
+
+end

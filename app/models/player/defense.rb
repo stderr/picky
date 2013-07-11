@@ -1,0 +1,3 @@
+class Defense < Player
+
+end
