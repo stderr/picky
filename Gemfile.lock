@@ -74,6 +74,9 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
+    kaminari (0.14.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     libv8 (3.11.8.17)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -163,6 +166,7 @@ DEPENDENCIES
   fantasy_football_nerd!
   jbuilder (~> 1.2)
   jquery-rails
+  kaminari
   mysql
   rails (= 4.0.0)
   rspec-rails
