@@ -1,3 +1,0 @@
-class Kicker < Player
-
-end
