@@ -1,3 +1,0 @@
-class RunningBack < Player
-
-end

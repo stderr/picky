@@ -1,2 +1,0 @@
-class WideReceiver < Player
-end
