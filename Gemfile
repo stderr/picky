@@ -16,9 +16,8 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :branch => '3.0.0'
 gem 'fantasy_football_nerd', github: 'stderr/fantasy_football_nerd'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+group :development do
+  gem "unicorn-rails"
 end
 
 group :test do
@@ -30,3 +29,4 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use debugger
 gem 'debugger', group: [:development, :test]
+
