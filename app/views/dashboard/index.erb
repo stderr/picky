@@ -1,1 +1,26 @@
-<h2>Hello!</h2>
+<h2>All Players</h2>
+
+<%= page_entries_info @players %>
+
+<table class='table table-striped'>
+  <caption>All players in the NFL</caption>
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @players.each do |player| %>
+      <tr>
+        <td><%= player.position %></td>
+        <td><%= player.name %></td>
+        <td><%= link_to "Predict", "#" %></td>
+      </tr>
+    <% end %>
+    
+  </tbody>
+</table>
+
+<%= paginate @players %>
