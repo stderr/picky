@@ -5,6 +5,7 @@ gem 'rails', '4.0.0'
 gem 'mysql'
 gem 'devise', '~> 3.0.0.rc'
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'omniauth'
 
 
 # Javascript / CSS / HTML
