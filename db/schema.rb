@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130712063434) do
+ActiveRecord::Schema.define(version: 20130713053525) do
 
   create_table "games", force: true do |t|
     t.integer  "home_team_id"
@@ -27,19 +27,29 @@ ActiveRecord::Schema.define(version: 20130712063434) do
     t.integer  "ffn_key"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "score_id"
   end
 
   create_table "schedulings", force: true do |t|
     t.integer "player_id"
     t.integer "game_id"
-    t.integer "passing_yards"
-    t.integer "rushing_yards"
-    t.integer "receiving_yards"
-    t.integer "touchdowns"
-    t.integer "interceptions"
-    t.integer "fumbles"
     t.string  "status"
     t.text    "notes"
+    t.integer "score_id"
+  end
+
+  create_table "scores", force: true do |t|
+    t.integer  "passing_yards",   default: 0
+    t.integer  "rushing_yards",   default: 0
+    t.integer  "receiving_yards", default: 0
+    t.integer  "receptions",      default: 0
+    t.integer  "passing_tds",     default: 0
+    t.integer  "rushing_tds",     default: 0
+    t.integer  "receiving_tds",   default: 0
+    t.integer  "interceptions",   default: 0
+    t.integer  "fumbles",         default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "teams", force: true do |t|

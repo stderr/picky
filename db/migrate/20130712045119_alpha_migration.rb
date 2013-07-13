@@ -33,14 +33,6 @@ class AlphaMigration < ActiveRecord::Migration
       t.integer :player_id
       t.integer :game_id
 
-      t.integer :passing_yards
-      t.integer :rushing_yards
-      t.integer :receiving_yards
-      t.integer :touchdowns
-
-      t.integer :interceptions
-      t.integer :fumbles
-
       t.string :status
 
       t.text :notes

@@ -1,5 +1,5 @@
 class Scheduling < ActiveRecord::Base
-  belongs_to :player
+  belongs_to :player, class_name: "Players::Player"
   belongs_to :game
   belongs_to :score
 
