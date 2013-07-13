@@ -1,8 +1,9 @@
 module Players
   class Player < ActiveRecord::Base
     belongs_to :team
+    belongs_to :score
+    has_many :schedulings
     has_many :games, through: :team
-    has_many :schedulings, through: :games
 
     paginates_per 10
 
