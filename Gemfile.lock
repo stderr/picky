@@ -93,6 +93,9 @@ GEM
     mysql (2.9.1)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
+    omniauth (1.1.4)
+      hashie (>= 1.2, < 3)
+      rack
     orm_adapter (0.4.0)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -180,6 +183,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   mysql
+  omniauth
   rails (= 4.0.0)
   rspec-rails
   sass-rails (~> 4.0.0)
