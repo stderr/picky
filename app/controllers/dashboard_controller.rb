@@ -1,7 +1,7 @@
 class DashboardController < ApplicationController
   def index
-    @players = Players::Player.all.page(params[:page])
-
+    @players = Agency.paginated(params[:page])
+    
     respond_to do |format|
       format.html
     end

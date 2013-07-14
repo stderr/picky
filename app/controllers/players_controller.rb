@@ -12,7 +12,7 @@ class PlayersController < ApplicationController
   end
 
   def typeahead
-    @players = Agent.typeahead(params[:query]) 
+    @players = Agency.typeahead(params[:query]) 
 
     respond_to do |format|
       format.js

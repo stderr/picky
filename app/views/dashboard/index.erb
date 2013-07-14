@@ -14,8 +14,8 @@
   <tbody>
     <% @players.each do |player| %>
       <tr>
-        <td><%= player.position %></td>
-        <td><%= player.name %></td>
+        <td><%= player.position_acronym %></td>
+        <td><%= player.full_name %></td>
         <td><%= link_to "Predict", "#" %></td>
       </tr>
     <% end %>
