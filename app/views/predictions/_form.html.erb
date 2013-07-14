@@ -1,0 +1,9 @@
+<%= form_for @prediction do |f| %>
+  <legend>Make a prediction!</legend>
+  <label>Choose the player:</label>
+
+  <%= f.text_field :player_id, data: { provide: 'typeahead' }, class: 'span3 player-typeahead', placeholder: 'Rodgers, Aaron' %>
+  <span class='help-block'>Search by the player's last name.</span>
+
+  <%= f.submit class: 'btn' %>
+<% end %>

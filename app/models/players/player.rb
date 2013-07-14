@@ -3,24 +3,14 @@ module Players
     belongs_to :team
     belongs_to :score
     has_many :schedulings
+    has_many :predictions
+
     has_many :games, through: :team
-    has_many :scores, through: :schedulings
 
     paginates_per 10
 
-    def name
-      [first_name, last_name].join(" ")
-    end
-
     def position
       @position ||= self.class.name.demodulize
-    end
-
-    def shortened_position
-      @acronym ||= begin
-        return "QB" if position == 'Quarterback'
-        position.scan(/\p{Upper}/)
-      end
     end
 
     def total_score_for(game, scoring_system = ScoringSystems::Standard)
@@ -36,5 +26,6 @@ module Players
     def statistics
       @statistics ||= []
     end
+
   end
 end
