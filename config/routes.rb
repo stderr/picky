@@ -6,6 +6,13 @@ Picky::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'dashboard#index'
 
+  resources :players do
+    collection do
+      get 'typeahead'
+    end
+  end
+
+  resources :predictions
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -9,5 +9,6 @@ Bundler.require(:default, Rails.env)
 module Picky
   class Application < Rails::Application
     config.autoload_paths += Dir[Rails.root.join('app', 'models', '**/')]
+    config.autoload_paths += Dir[Rails.root.join("app", "presenters", "**/")]
   end
 end
